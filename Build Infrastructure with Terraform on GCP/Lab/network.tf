@@ -22,7 +22,7 @@ module "vpc" {
 
 resource "google_compute_firewall" "tf-firewall" {
   name    = "tf-firewall"
- network = "projects/qwiklabs-gcp-03-9af11be5f50f/global/networks/tf-vpc-566985"
+  network = "projects/qwiklabs-gcp-03-9af11be5f50f/global/networks/tf-vpc-566985"
 
   allow {
     protocol = "tcp"
